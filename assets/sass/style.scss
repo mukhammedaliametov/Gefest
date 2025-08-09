@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap");
+
+$text-color: rgba(33, 50, 82, 1);
+$font-inter: "Inter", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0px auto;
+}
+
+.header {
+  @extend .container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  font-family: $font-inter;
+  &_first {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &_second {
+    button {
+      background: rgba(45, 114, 205, 1);
+      color: #fff;
+      border: none;
+      padding: 15px 20px;
+      font-family: $font-inter;
+      cursor: pointer;
+    }
+    &_mobile {
+      display: none;
+    }
+  }
+  &_third {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    & a:nth-child(1) {
+      font-weight: 600;
+      font-size: 20px;
+      color: #000;
+    }
+    & a:nth-child(2) {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px dashed #5284f7;
+      color: #5284f7;
+    }
+  }
+  @media (max-width: 1024px) {
+    & {
+      flex-direction: column;
+      &_first {
+        p {
+          font-size: 14px;
+          margin-left: 12px;
+        }
+      }
+      &_second {
+        button{
+            font-size: 15px;
+            padding: 10px 5px;
+        }
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        .second_mobile {
+          display: flex;
+          flex-direction: column;
+          text-align: end;
+          & a:nth-child(1) {
+            font-weight: 600;
+            font-size: 13px;
+            color: #000;
+          }
+          & a:nth-child(2) {
+            font-size: 10px;
+          }
+        }
+      }
+      &_third {
+        display: none;
+      }
+    }
+  }
+}
