@@ -27,9 +27,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 30px 20px;
-  font-family: "Inter", sans-serif;
-  position: static;
-  z-index: 999; }
+  font-family: "Inter", sans-serif; }
   .header_first {
     display: flex;
     align-items: center;
@@ -119,15 +117,11 @@ a {
         margin: 0; }
       .hero_first button {
         position: relative;
-        bottom: -320px;
-        left: 30px; }
+        bottom: -360px;
+        left: 15px; }
       .hero img {
         width: 380px;
         position: relative;
-        top: -340px; }
-      .hero_second {
-        background: red; }
-        .hero_second button {
-          display: block; } }
+        top: -130px; } }
 
 /*# sourceMappingURL=style.css.map */

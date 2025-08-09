@@ -38,8 +38,6 @@ a {
   align-items: center;
   padding: 30px 20px;
   font-family: $font-inter;
-  position: static;
-  z-index: 999;
   &_first {
     display: flex;
     align-items: center;
@@ -166,20 +164,14 @@ a {
         }
         button {
           position: relative;
-          bottom: -320px;
-          left: 30px;
+          bottom: -360px;
+          left: 15px;
         }
       }
       img {
         width: 380px;
         position: relative;
-        top: -340px;
-      }
-      &_second{
-        background: red;
-        button{
-            display: block;
-        }
+        top: -130px;
       }
     }
   }
