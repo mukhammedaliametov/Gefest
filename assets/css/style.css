@@ -28,7 +28,7 @@ a {
     padding: 15px 20px;
     font-family: "Inter", sans-serif;
     cursor: pointer; }
-  .header_second_mobile {
+  .header_second .second_mobile {
     display: none; }
   .header_third {
     display: flex;
