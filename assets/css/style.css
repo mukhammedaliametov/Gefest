@@ -7,11 +7,11 @@
 a {
   text-decoration: none; }
 
-.container, .header {
+.container, .header, .price, .logistic, .work, .brands, .document_content {
   max-width: 1250px;
   margin: 0px auto; }
 
-.btn, .header_second button, .hero_first button, .hero_second button {
+.btn, .header_second button, .hero_first button, .hero_second button, .price_content .second_content .pirce_info button {
   background: #2d72cd;
   color: #fff;
   border: none;
@@ -19,7 +19,7 @@ a {
   font-family: "Inter", sans-serif;
   cursor: pointer;
   opacity: 0.8; }
-  .btn:hover, .header_second button:hover, .hero_first button:hover, .hero_second button:hover {
+  .btn:hover, .header_second button:hover, .hero_first button:hover, .hero_second button:hover, .price_content .second_content .pirce_info button:hover {
     opacity: 1; }
 
 .header {
@@ -83,7 +83,7 @@ a {
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  padding-left: 80px; }
+  padding-left: 60px; }
   .hero_first h1 {
     font-weight: 600;
     font-size: 37px;
@@ -122,6 +122,293 @@ a {
       .hero img {
         width: 380px;
         position: relative;
-        top: -130px; } }
+        top: -90px; } }
+
+.price {
+  padding-top: 50px; }
+  .price h2 {
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 150%;
+    color: #213252;
+    font-family: "Inter", sans-serif; }
+  .price p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #213252;
+    font-family: "Inter", sans-serif;
+    margin-top: 6px; }
+  .price_content p {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    line-height: 150%;
+    color: #213252;
+    margin-top: 50px;
+    margin-bottom: 30px; }
+  .price_content .content_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .price_content .content_menu div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      border: 1px solid #60677481;
+      cursor: pointer; }
+      .price_content .content_menu div p {
+        color: #213252;
+        font-size: 16px; }
+      .price_content .content_menu div img {
+        margin-bottom: -30px;
+        padding-top: 40px; }
+    .price_content .content_menu .selected {
+      background-color: #edf1f4; }
+      .price_content .content_menu .selected i {
+        display: none; }
+  .price_content .second_content {
+    display: flex;
+    align-items: center; }
+    .price_content .second_content img {
+      width: 624px;
+      margin-top: -2px; }
+    .price_content .second_content .pirce_info {
+      padding-top: 120px;
+      border: 1px solid #60677481;
+      width: 100%;
+      min-height: 98.5vh;
+      margin-top: -3px;
+      padding-left: 80px; }
+      .price_content .second_content .pirce_info ul {
+        margin-bottom: 120px; }
+        .price_content .second_content .pirce_info ul li {
+          margin: 10px 0px;
+          font-family: "Inter", sans-serif; }
+      .price_content .second_content .pirce_info button {
+        padding: 15px 40px; }
+  @media (max-width: 1024px) {
+    .price {
+      padding: 10px 20px; }
+    .price h2 {
+      font-size: 18px;
+      margin: 10px 0px; }
+    .price p {
+      font-size: 18px; }
+    .price_content p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      margin-top: 15px; }
+    .price_content .content_menu {
+      display: none; }
+    .price_content .second_content {
+      flex-direction: column; }
+      .price_content .second_content img {
+        display: none; }
+      .price_content .second_content .price_info {
+        padding-top: 40px;
+        min-height: 30vh;
+        width: 100%;
+        padding-left: 0px; }
+        .price_content .second_content .price_info ul {
+          margin-bottom: 0px; } }
+
+.logistic {
+  padding-top: 100px; }
+  .logistic_first {
+    display: flex;
+    align-items: center;
+    gap: 50px; }
+    .logistic_first div {
+      display: flex;
+      flex-direction: column; }
+  .logistic_third {
+    display: flex;
+    align-items: center;
+    gap: 50px; }
+    .logistic_third div {
+      display: flex;
+      flex-direction: column; }
+  .logistic div {
+    display: flex;
+    align-items: center; }
+    .logistic div div {
+      display: flex;
+      flex-direction: column; }
+  .logistic h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #213252;
+    font-family: "Inter", sans-serif; }
+  .logistic p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #213252;
+    font-family: "Inter", sans-serif; }
+
+.work {
+  padding: 50px 0px; }
+  .work h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: #213252; }
+  .work_content {
+    display: flex;
+    align-items: center;
+    gap: 20px; }
+    .work_content_left {
+      width: 50%; }
+      .work_content_left h3 {
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 145%;
+        color: #213252; }
+      .work_content_left p {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 167%;
+        color: #213252;
+        width: 76%;
+        margin-top: 10px; }
+    .work_content_right {
+      margin-left: 40px; }
+      .work_content_right img {
+        width: 450px; }
+      .work_content_right .gefest {
+        width: 100px;
+        position: relative;
+        top: -50px;
+        left: -250px; }
+
+.brands {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 0px; }
+  .brands_left {
+    width: 432px; }
+    .brands_left h3 {
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 145%;
+      color: #213252; }
+    .brands_left p {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 167%;
+      color: #213252;
+      margin-top: 20px; }
+  .brands_right {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    .brands_right div {
+      display: flex;
+      align-items: center;
+      gap: 5px; }
+
+.document {
+  background: #f6f6f6;
+  padding-bottom: 30px; }
+  .document_content {
+    padding-top: 50px; }
+    .document_content h3 {
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 162%;
+      color: #213252; }
+    .document_content p {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 180%;
+      color: #213252;
+      padding: 20px 0px; }
+    .document_content_group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center; }
+
+.footer {
+  background-color: #141414;
+  color: #fff;
+  padding: 30px 40px;
+  font-family: "Inter", sans-serif; }
+  .footer a {
+    color: #b0c4de;
+    text-decoration: none; }
+    .footer a:hover {
+      text-decoration: underline; }
+  .footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px; }
+  .footer__brand {
+    max-width: 250px;
+    display: flex;
+    align-items: center; }
+    .footer__brand .footer__logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #cbd6ea; }
+    .footer__brand .footer__desc {
+      font-size: 14px;
+      margin-top: 5px;
+      color: #ccc;
+      margin-left: 15px; }
+  .footer__messengers {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; }
+    .footer__messengers .footer__messenger {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px; }
+      .footer__messengers .footer__messenger img {
+        width: 32px;
+        height: 32px; }
+      .footer__messengers .footer__messenger span {
+        font-size: 13px;
+        color: #e0e0e0; }
+  .footer__contact {
+    text-align: right; }
+    .footer__contact .footer__phone {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px; }
+    .footer__contact .footer__callback {
+      font-size: 14px;
+      color: #66aaff; }
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #999; }
+    .footer__bottom a {
+      color: #999;
+      margin-right: 20px; }
+    .footer__bottom .footer__dev {
+      display: flex;
+      align-items: center;
+      gap: 10px; }
+      .footer__bottom .footer__dev img {
+        height: 20px; }
 
 /*# sourceMappingURL=style.css.map */
